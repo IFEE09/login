@@ -1,0 +1,13 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.user {
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
