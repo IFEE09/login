@@ -18,3 +18,21 @@ emailInput.addEventListener('input', () => {
     emailInput.classList.add('invalid');
   }
 });
+
+// Obtenemos la referencia al input de contraseña
+const passwordInput = document.getElementById('passwordInput');
+
+// Escuchamos el evento 'input' para validar en tiempo real
+passwordInput.addEventListener('input', () => {
+  const valor = passwordInput.value.trim();
+
+  // Si el valor no está vacío, el input es válido
+  if (valor !== '') {
+    passwordInput.classList.remove('invalid');
+    passwordInput.classList.add('valid');
+  } else {
+    // Si está vacío, se considera inválido
+    passwordInput.classList.remove('valid');
+    passwordInput.classList.add('invalid');
+  }
+});
