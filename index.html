@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/assets/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/valid.css">
 </head>
 <body>
     <div class="login">
@@ -13,7 +14,7 @@
         </div>
         <div>
             <form action="">
-                <input type="text" placeholder="Username" required>
+                <input id="emailInput" type="text" placeholder="Username" required>
                 <input type="password" placeholder="Password" required>
                 <button type="submit">Login</button>
                 <p>Don't have an account? <a href="/register">Register</a></p>
@@ -21,5 +22,6 @@
             </form> 
         </div>
     </div>
+    <script src="./assets/js/login.js"></script>
 </body>
 </html>
