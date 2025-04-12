@@ -1,3 +1,6 @@
+* {
+    transition: all 0.3s ease;
+}
 .login {
     display: flex;
     flex-direction: column;
@@ -20,8 +23,6 @@
     align-items: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    transition: all 0.3s ease;
 }       
 
 form {
@@ -36,6 +37,17 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     gap: 10px;  
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
 }
 
 ::placeholder {
